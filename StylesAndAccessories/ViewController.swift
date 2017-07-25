@@ -43,3 +43,9 @@ extension ViewController: UITableViewDataSource {
     return cell
   }
 }
+
+extension ViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+    print("\(indexPath.row) was selected")
+  }
+}
